@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Res-web</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+   
+   
+
+<!--NAVBAR START HERE-->
+   <section class="fixed-top">
+    <!--NEWS START HERE-->
+   <div class="container-fluid bg-success py-1 ">
+       <div class="row">
+           <div class="col-12 d-flex">
+               <b class="text-warning" id="news">NEWS:</b>
+               <marquee>
+                   All food items are discount by 15%.
+               </marquee>
+           </div>
+       </div>
+   </div>
+   <!--NEWS END HERE-->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+       <div class="container-fluid ">
+           <a href="#" class="navbar-brand">
+               <img src="pictures/p1.jpg" style="width: 60px;">
+           </a>
+           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavID"
+            aria-controls="NavID" aria-expanded="false"
+            aria-label="toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="NavID">
+               <ul class="navbar-nav">
+                   <li class="nav-item">
+                       <a class="nav-link fw-bold text-success" aria-current="page" href="index.html" target="_blank" id="nav">Home</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="about.html" target="_blank" class="nav-link fw-bold text-success fs-6" id="nav">About</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="gallary.html" target="_blank" class="nav-link fw-bold text-success" id="nav">Gallary</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="contact-me.html" target="_blank" class="nav-link fw-bold text-success" id="nav">Contact me</a>
+                   </li>
+               </ul>
+               <form action="" class="d-flex">
+                   <input type="text" class="form-control me-1" placeholder="search" id="search">
+                   <button class="btn bg-info text-white" id="submit">submit</button>
+               </form>
+           </div>
+       </div>
+   </nav>
+</section>
+<!--NAVBAR END HERE-->
+
+<!--CREATE ACCOUNT START HERE-->
+</section>
+<div class="contain" style="margin-top: 150px;">
+    <form id="form1">
+        <h3 id="create-account">CREATE ACCOUNT</h3>
+        <input type="text" placeholder="Email" required id="create-account">
+        <input type="password" placeholder="password" required id="create-account">
+        <input type="password" placeholder="ConfirmPassword" required id="create-account">
+        <div class="btn-box">
+            <button type="button" id="next1">Next</button>
+        </div>
+    </form>
+    <form id="form2">
+        <h3 id="create-account">SOCIAL LINKS</h3>
+        <input type="text" placeholder="Facebook" id="create-account">
+        <input type="text" placeholder="Github" id="create-account">
+        <input type="text" placeholder="Linkedin" id="create-account">
+        <div class="btn-box">
+            <button type="button" id="back1">Back</button>
+            <button type="button" id="next2">Next</button>
+        </div>
+    </form>
+    <form id="form3">
+        <h3 id="create-account">PERSONAL INFO</h3>
+        <input type="text" placeholder="First Name" required id="create-account">
+        <input type="text" placeholder="Last Name" required id="create-account">
+        <input type="text" placeholder="Mobile No." required id="create-account">
+        <div class="btn-box">
+            <button type="button" id="back2">Back</button>
+            <button type="submit" id="sub">submit</button>
+        </div>
+    </form>
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small id="step">Step 1</small></div>
+        <div class="step-col"><small id="step">Step 2</small></div>
+        <div class="step-col"><small id="step">Step 3</small></div>
+    </div>
+</div>
+<!--CREATE ACCOUNT END HERE-->
+
+   <hr>
+<!---FOOTER START HERE-->
+   <section>
+        <div class="container-fluid mt-5 bg-success border-top">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="pictures/p1.jpg" style="width: 60px;" class="mt-5" id="logo">
+                </div>
+                <div class="col-md-4">
+                    <div class="social-icon mt-5">
+                        <a href="/"><i class='bx bxl-facebook'></i></a>
+                        <a href="/"><i class='bx bxl-twitter'></i></a>
+                        <a href="/"><i class='bx bxl-instagram'></i></a>
+                        <a href="/"><i class='bx bxl-youtube'></i></a>
+                        <a href="/"><i class='bx bxl-linkedin'></i></a>
+                    </div> 
+                </div>
+                <div class="col-md-4" id="food">
+                    <h4 class="text-warning py-2">Address :</h4>
+                    <p class="text-white">Shalpomaria,Kishoreganj,<br>Bangladesh.</p>
+                    <p class="text-white">01940-506556</p>
+                    <p class="text-white">hussainmkrrm@gmail.com</p>
+                </div>
+                    
+            </div>
+        </div>
+   </section>
+   <section>
+       <footer class="bg-success text-light text-center py-2 mt-1">
+           <h6 id="copy">Copyright &copy;2024 monir.All Rights Rescrved.</h6>
+       </footer>
+   </section>
+<!----FOOTER END HERE-->
+
+
+<!--CREATE ACCOUNT  JS START HERE-->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script>
+    var form1 = document.getElementById("form1");
+    var form2 = document.getElementById("form2");
+    var form3 = document.getElementById("form3");
+
+    var next1 = document.getElementById("next1");
+    var next2 = document.getElementById("next2");
+    var back1 = document.getElementById("back1");
+    var back2 = document.getElementById("back2");
+
+    var progress = document.getElementById("progress");
+
+    next1.onclick = function(){
+        form1.style.left = "-450px";
+        form2.style.left = "40px";
+        progress.style.width = "240px";
+    }
+    back1.onclick = function(){
+        form1.style.left = "40px";
+        form2.style.left = "450px";
+        progress.style.width = "120px";
+    } 
+    next2.onclick = function(){
+        form2.style.left = "-450px";
+        form3.style.left = "40px";
+        progress.style.width = "360px";
+    } 
+    back2.onclick = function(){
+        form2.style.left = "40px";
+        form3.style.left = "450px";
+        progress.style.width = "240px";
+    } 
+    </script>
+<!--CREATE ACCOUNT  JS END HERE-->
+</body>
+</html>
